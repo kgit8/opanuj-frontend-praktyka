@@ -1,13 +1,17 @@
-export function f1(a, b) {
+export function addNumber(a: number, b:number) {
   return a + b;
 }
-export function f2(a, b) {
+export function subtractNumber(a: number, b: number) {
   return a - b;
 }
-export function f3(a, b) {
+export function multiplyNumer(a: number, b: number) {
   return a * b;
 }
 
-export function f4(a, b) {
+export function divideNumber(a: number, b: number): number {
+  if (b === 0) {
+    console.error('Error: Division by zero');
+    return Infinity;
+  }
   return a / b;
 }
